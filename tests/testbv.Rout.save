@@ -1,0 +1,138 @@
+
+R : Copyright 2004, The R Foundation for Statistical Computing
+Version 1.9.0 Under development (unstable) (2004-03-04), ISBN 3-900051-00-3
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for a HTML browser interface to help.
+Type 'q()' to quit R.
+
+> #some random data
+> library(Icens)
+> 
+> intvlx <- matrix(c(
++ 0.8820387, 10.666764,
++ 15.2923703, 18.390665,
++ 10.0710104,
++ 18.9,
++ 7.9796946, 10.964210,
++ 5.2703924, 11.267734,
++ 18.7,
++ 19.875977,
++ 5.9667531, 19.886629,
++ 9.7729062, 13.055671,
++ 3.1947369,
++ 7.482414,
++ 4.2636605,  7.216566,
++ 5.3197158, 15.686208,
++ 0.2885009,
++ 11.463272,
++ 0.2885009,
++ 11.463272),ncol=2,byrow=TRUE)
+> 
+> intvly <- matrix(c(
++ 8.431484, 11.324923,
++ 9.6,
++ 18.739108,
++ 1.438516,  3.232738,
++ 10.6, 11.711857,
++ 14.298833,
++ 16.752745,
++ 9.431221, 16.958045,
++ 2.396955,  7.541405,
++ 12.334413,
++ 21.932913,
++ 7.0, 19.268005,
++ 9.342461, 13.843589,
++ 14.717762,
++ 22.361883,
++ 16.983453, 20.541734,
++ 7.918273, 10.),ncol=2,byrow=TRUE)
+> 
+> #find the cliques
+> BVcliques(intvlx,intvly)
+[[1]]
+[1] 7 9
+
+[[2]]
+[1] 10  9  1 13
+
+[[3]]
+[1] 11  5  9
+
+[[4]]
+[1] 11  9 12
+
+[[5]]
+[1] 3 7
+
+[[6]]
+[1] 4 1
+
+[[7]]
+[1]  8 11  5
+
+[[8]]
+[1]  8 11 12
+
+[[9]]
+[1]  2 11
+
+[[10]]
+[1] 6
+
+> 
+> #find the support
+> BVsupport(intvlx,intvly)
+         xlo       xhi       ylo       yhi
+1   5.966753  7.482414  7.000000  7.541405
+2   4.263661  7.216566  9.342461 10.000000
+3   5.319716  7.482414 14.717762 16.752745
+4   5.319716  7.482414 16.983453 19.268005
+5  10.071010 18.900000  2.396955  3.232738
+6   7.979695 10.666764 10.600000 11.324923
+7   9.772906 11.267734 14.717762 16.752745
+8   9.772906 11.463272 16.983453 20.541734
+9  15.292370 15.686208 14.717762 18.739108
+10 18.700000 19.875977  9.431221 16.958045
+> 
+> #find the clique matrix
+> clmat <- BVclmat(BVcliques(intvlx,intvly))
+> 
+> #the matrix is rank deficient
+>  clmat[4,]+clmat[7,]-clmat[3,]-clmat[8,]
+ [1] 0 0 0 0 0 0 0 0 0 0 0 0 0
+> 
+> #should be the zero vector
+> 
+> #now for some estimation
+> 
+>  p1 <- VEM(clmat)
+> 
+>  p2 <- PGM(clmat)
+> 
+>  #p3 seems to be different from p1 and p2!
+>  p3 <- EMICM(clmat)
+> 
+>  # so is the est unique?
+> 
+>   w<-clmat%*%t(clmat)
+>   b<-eigen(w)
+> 
+>    b$values
+ [1]  9.019594e+00  4.947594e+00  2.889820e+00  2.000000e+00  2.000000e+00
+ [6]  1.461001e+00  1.207129e+00  1.000000e+00  4.748624e-01 -2.480201e-16
+>    # one zero eigenvalue
+> 
+>    ev1 <- b$vectors[,10]
+> 
+>    #but the estimator is unique since we cannot move in the direction of
+>    #recesion
+> 

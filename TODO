@@ -1,0 +1,21 @@
+ISDM seems to be in all sorts of trouble- look to see if I implemented this
+on hsph; go back to L&K and try to improve
+  - it doesn't converge on easy problems
+  - if A is not of full rank it fails to work - it should!
+
+All methods need to have the description section enhanced.
+
+It would be nice to use Therneau's Surv class (but survival5 might be 
+a lot of overhead).
+
+Serious testing...
+
+objects of class icsurv should indicate which fitting method was used.
+
+it would be nice if we got MLEintvl to become MLEregion and have an abstraction
+that worked in all dimensions....
+
+there seem to be covariates available for the hiv data- we should include them
+so that more complex analyses can be carried out
+
+ somewhere I have a copy of Steve Self's data - that should get included.
