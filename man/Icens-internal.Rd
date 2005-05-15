@@ -11,7 +11,6 @@
  Internal Icens functions
 }
 \usage{
-These are not really user level functions.
 }
 \details{
   These are not to be called by the user.

@@ -5,7 +5,7 @@
   The Vertex Exchange Method is used to obtain the NPMLE of \code{p}.
 }
 \usage{
-VEM(A, pvec, maxiter=500, tol=1e-07, tolbis=1e-07), keepiter=FALSE)
+VEM(A, pvec, maxiter=500, tol=1e-07, tolbis=1e-07, keepiter=FALSE)
 }
 \arguments{
   \item{A}{ The m by n incidence matrix or the n by 2 matrix of intervals. }
