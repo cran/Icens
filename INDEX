@@ -1,40 +1,38 @@
-BVcliques               Find the bivariate cliques from the marginal
-                        data.
-BVclmat                 Comput the clique matrix from the clique list.
-BVmacprod               Internal Icens functions
-BVsupport               Compute the support for the cliques of a
-                        bivariate intersection graph.
-Bisect                  An implementation of the bisection algorithm
-                        for root finding.
-EM                      A function to compute the NPMLE of p based on
-                        the incidence matrix A.
-EMICM                   Compute the NPMLE for censored data using the
-                        EMICM.
-ISDM                    Estimate the NPMLE of censored data using the
-                        ISDM method proposed in Lesperance and
-                        Kalbfleisch (19
-MLEintvl                Compute the real representation for the
-                        maximal cliques.
-Maclist                 A function to
-Macmat                  A function to compute the incidence matrix for
-                        an intersction graph.
-PGM                     An implementation of the projected gradient
-                        methods for finding the NPMLE.
-PMGA                    Implement the pool monotone groups algorithm.
-Plotboxes               Plot the event time regions for bivariate
-                        data.
-VEM                     Compute the NPMLE of p via the Vertex Exchange
-                        Method.
-cmv                     Data on times to shedding of cytomegalovirus
-                        and to colonization of mycobacterium avium
-                        complex.
-cosmesis                The time taken until cosmetic deterioration of
-                        breast cosmesis.
-hiv                     Intervals for infection time and disease onset
-                        for 257 hemophiliac patients.
-icsurv                  The class of objects returned by the
-                        estimation routines in the Icens library.
-plot.icsurv             A plot method for the estimates produced by
-                        the estimation methods in Icens.
-pruitt                  A small artificial, bivariate right-censored
-                        data set.
+BVcliques                Find the bivariate cliques from the marginal
+                         data.
+BVclmat                  Comput the clique matrix from the clique list.
+BVsupport                Compute the support for the cliques of a
+                         bivariate intersection graph.
+Bisect                   An implementation of the bisection algorithm for
+                         root finding.
+EM                       A function to compute the NPMLE of p based on
+                         the incidence matrix A.
+EMICM                    Compute the NPMLE for censored data using the
+                         EMICM.
+ISDM                     Estimate the NPMLE of censored data using the
+                         ISDM method proposed in Lesperance and
+                         Kalbfleisch (19
+Icens-internal           Internal Icens functions
+MLEintvl                 Compute the real representation for the maximal
+                         cliques.
+Maclist                  A function to
+Macmat                   A function to compute the incidence matrix for
+                         an intersction graph.
+PGM                      An implementation of the projected gradient
+                         methods for finding the NPMLE.
+PMGA                     Implement the pool monotone groups algorithm.
+Plotboxes                Plot the event time regions for bivariate data.
+VEM                      Compute the NPMLE of p via the Vertex Exchange
+                         Method.
+cmv                      Data on times to shedding of cytomegalovirus and
+                         to colonization of mycobacterium avium complex.
+cosmesis                 The time taken until cosmetic deterioration of
+                         breast cosmesis.
+hiv                      Intervals for infection time and disease onset
+                         for 257 hemophiliac patients.
+icsurv                   The class of objects returned by the estimation
+                         routines in the Icens library.
+plot.icsurv              A plot method for the estimates produced by the
+                         estimation methods in Icens.
+pruitt                   A small artificial, bivariate right-censored
+                         data set.

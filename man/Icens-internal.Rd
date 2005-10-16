@@ -10,8 +10,6 @@
 \description{
  Internal Icens functions
 }
-\usage{
-}
 \details{
   These are not to be called by the user.
 }

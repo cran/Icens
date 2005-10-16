@@ -8,8 +8,8 @@
   (1978). 
 }
 \usage{
-PGM(A, pvec, maxiter = 500, tol=1e-07, told=2e-05, tolbis=1e-08, 
-      keepiter=FALSE)
+PGM(A, pvec, maxiter = 500, tol=1e-07, told=2e-05, tolbis=1e-08,
+    keepiter=FALSE)
 }
 \arguments{
   \item{A}{ \code{A} is either the m by n clique matrix or the n by 2

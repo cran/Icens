@@ -4,8 +4,9 @@
 \description{ Plot rectangles described by the interval given in the
   first two arguments.}
 \usage{
-Plotboxes(int1, int2, textp=FALSE, showmac=FALSE, 
-  showsupp=FALSE, showmp=FALSE, cliques=NULL, macprod=NULL, density=c(2, 8, 20), col=c(2, 3, 4), offsetx=0.02, offsety=0.03)
+Plotboxes(int1, int2, textp=FALSE, showmac=FALSE, showsupp=FALSE, showmp=FALSE,
+cliques=NULL, macprod=NULL, density=c(2, 8, 20), col=c(2, 3, 4),
+offsetx=0.02, offsety=0.03) 
 }
 
 \arguments{
