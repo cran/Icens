@@ -32,7 +32,7 @@ offsetx=0.02, offsety=0.03)
 \references{ \emph{Graph--Theoretical Aspects of Bivariate Censored
     Data}, R. Gentleman and A. Vandal, 1999, submitted. }
 \author{ A. Vandal and R. Gentleman }
-\seealso{ \code{\link{BVclmat}}, \code{\ling{BVsupport}},
+\seealso{ \code{\link{BVclmat}}, \code{\link{BVsupport}},
   \code{\link{BVcliques}}  }
 
 \examples{
