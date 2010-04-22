@@ -33,7 +33,7 @@ PGM(A, pvec, maxiter = 500, tol=1e-07, told=2e-05, tolbis=1e-08,
   An object of class \code{\link{icsurv}} containing the following
   components: 
   \item{pf }{The NPMLE of \code{pvec}. }
-  \item{sigma }{The cummulative sum of \code{pvec}.}
+  \item{sigma }{The cumulative sum of \code{pvec}.}
   \item{lval }{ The value of the log likelihood at \code{pvec}.} 
   \item{clmat }{ The clique matrix. }
   \item{method }{ The method used, currently only "MPGM" is possible. }

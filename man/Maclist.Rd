@@ -2,7 +2,7 @@
 \alias{Maclist}
 \title{ A function to  }
 \description{
-  Returns a list of maximal cliques of the intersction graph of the
+  Returns a list of maximal cliques of the intersection graph of the
   real valued intervals supplied in \code{m}. These are one dimensional
   intervals with one interval for each individual. The algorithm is
   coded in interpreted code and should be moved to compiled code for speed.

@@ -27,7 +27,7 @@ VEM(A, pvec, maxiter=500, tol=1e-07, tolbis=1e-07, keepiter=FALSE)
     NPMLE. }
   \item{converge}{Boolean stating whether the iteration converged.}
   \item{intmap}{If present it contains the real representations for the
-    maximimal cliques. These are the intervals (on the real line) where
+    maximal cliques. These are the intervals (on the real line) where
     the mass in \code{pf} is placed.}
 }
 \references{ \emph{A Vertex-exchange-method in $D$-optimal Design Theory

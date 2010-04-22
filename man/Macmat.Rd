@@ -1,6 +1,6 @@
 \name{Macmat}
 \alias{Macmat}
-\title{A function to compute the incidence matrix for an intersction graph. }
+\title{A function to compute the incidence matrix for an intersection graph. }
 \description{
   Returns the Petrie matrix and Petrie pairs of an interval order given its
   list of maximal antichains. These can be obtained from

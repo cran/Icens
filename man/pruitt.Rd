@@ -16,9 +16,8 @@ are seven rows corresponding to the seven maximal cliques in the
 intersection graph.
 }
 \source{
-Small Sample Comparison of Six Bivariate Survival Curve
-            Estimators, Journal of Statistical Computation and Simulation,
-R. Pruitt, 1993.
+Small Sample Comparison of Six Bivariate Survival Curve Estimators,
+Journal of Statistical Computation and Simulation, R. Pruitt, 1993.
 }
 \examples{
 data(pruitt)

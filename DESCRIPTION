@@ -1,14 +1,15 @@
 Package: Icens
-Version: 1.18.0
-Author: R. Gentleman and Alain Vandal .
+Title: NPMLE for Censored and Truncated Data
 Description: Many functions for computing the NPMLE for censored and
         truncated data.
-Title: NPMLE for Censored and Truncated Data
-Depends: survival
-License: Artistic-2.0
+Version: 1.20.0
+Author: R. Gentleman and Alain Vandal
 Maintainer: Biocore Team c/o BioC user list
         <bioconductor@stat.math.ethz.ch>
+Depends: survival
+Imports: graphics
+License: Artistic-2.0
 biocViews: Bioinformatics, Infrastructure
-Packaged: 2009-11-12 09:02:44 UTC; biocbuild
+Packaged: 2010-04-22 22:33:34 UTC; biocbuild
 Repository: CRAN
-Date/Publication: 2009-11-13 10:42:32
+Date/Publication: 2010-05-01 12:44:54

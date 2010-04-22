@@ -134,14 +134,14 @@ function(int1,int2,textp=FALSE,showmac=FALSE,showsupp=FALSE,showmp=FALSE,cliques
 		if (is.null(cliques)) cliques<-BVcliques(int1,int2)
 		temp<-BVsupport(int1,int2,cliques=cliques)
 		for (i in 1:dim(temp)[1])
-
-polygon(temp[i,c(1,2,2,1)],temp[i,c(3,3,4,4)],density=density[2],col=col[2])
+            polygon(temp[i,c(1,2,2,1)],temp[i,c(3,3,4,4)],density=density[2],
+                    col=col[2])
 	}
 	if (showmp) {
 		if (is.null(macprod)) macprod<-BVmacprod(int1,int2)$mpcoor
 		for (i in 1:dim(macprod)[1])
-polygon(macprod[i,c(1,2,2,1)],macprod[i,c(3,3,4,4)],density=density[3],
-   col=col[3],angle=-45)
+            polygon(macprod[i,c(1,2,2,1)],macprod[i,c(3,3,4,4)],
+                    density=density[3],col=col[3],angle=-45)
 	}
 }
 

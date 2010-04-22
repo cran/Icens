@@ -12,17 +12,17 @@ offsetx=0.02, offsety=0.03)
 \arguments{
   \item{int1}{ The intervals for the x dimension. }
   \item{int2}{ The intervals for the y dimension. }
-  \item{textp}{ }
+  \item{textp}{ Boolen, if true add text. }
   \item{showmac}{ Boolean, if true then the maximal cliques are shown in
-  a different colour? }
-  \item{showsupp}{  }
-  \item{showmp}{ }
-  \item{cliques}{  }
-  \item{macprod}{  }
-  \item{density}{  }
-  \item{col}{  }
-  \item{offsetx}{  }
-  \item{offsety}{  }
+  a different color? }
+  \item{showsupp}{ Boolean, if true show support boxes. }
+  \item{showmp}{ Boolean }
+  \item{cliques}{ Maximal cliques. }
+  \item{macprod}{ macprod }
+  \item{density}{ The density of the polygon shading lines, in lines per inch. }
+  \item{col}{ Color for plotting features. }
+  \item{offsetx}{ Offset for x-axis. }
+  \item{offsety}{ Offset for y-axis. }
 }
 
 \value{

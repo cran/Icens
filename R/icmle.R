@@ -328,7 +328,7 @@ plot.icsurv <- function(x, type="eq", surv=FALSE, bounds=FALSE, shade=3,
                 if (type=="gw")
                     main<-"Survival GWMLE function"
                 else if (type=="lc")
-                    main<-"Left-continuous survival GMLE  function"
+                    main<-"Left-continuous survival GMLE function"
                 else
                     main<-"GMLE survival equivalence class"
             } else {
